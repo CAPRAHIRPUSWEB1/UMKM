@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMP</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family:Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFACD ;
+        }
+        header {
+/*            background-color: #333;*/
+background-color: #d28d42;
+background-image: linear-gradient(0deg, #d28d42 0%, #8c4502 100%);
+
+
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            background-color: #FDA50F;
+            width: 25%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .testimonials {
+            background-color: #B67233;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        table img {
+  width: 100px; /* Ganti dengan ukuran lebar yang diinginkan */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        
+        button:hover {
+            background-color: #218838;
+        }
+         .gambar-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Jarak antar gambar */
+        }
+        .gambar-container img {
+            width: 22%; /* Atur ukuran gambar agar pas dengan 4 gambar */
+            border-radius: 8px; /* Opsional: memberi sudut gambar menjadi bulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: memberi bayangan pada gambar */
+        }
+        .contact-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-container h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-container a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .contact-container a:hover {
+            background-color: #0056b3;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+
+  </head>
+  <body>
+
+  	<header>
+    	<h1>Griya Menda Pak Jotho</h1>
+    	<p>Olahan Kambing Terlezat dan Terpercaya di Kota Yogyakarta</p>
+    	<img src="77.jpg" alt="Sate Kambing Pak Jotho" width="100" height="100">
+	</header>
+    
+<nav>
+    <a href="#deskripsi">Tentang Kami</a>
+    <a href="#menu">Menu</a>
+    <a href="#paket-layanan-kami">Paket Layanan Kami</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#review">Review</a>
+</nav>
+
+<main>
+
+    <!-- Tentang Kami Section -->
+    <section id="deskripsi">
+        <h2 class="section-title">Tentang Griya Menda Pak Jotho</h2>
+<div class="container">
+    <div class="row">
+        <!-- Foto 1, 2, 3 pada baris pertama -->
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp1.jpg" class="img-fluid" alt="Foto 1">
+        </div>
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp2.jpg" class="img-fluid" alt="Foto 2">
+        </div>
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp3.jpg" class="img-fluid" alt="Foto 3">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Foto 4, 5, 6 pada baris kedua -->
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp4.jpg" class="img-fluid" alt="Foto 4">
+        </div>
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp5.jpg" class="img-fluid" alt="Foto 5">
+        </div>
+        <div class="col-12 col-sm-4 mb-3">
+            <img src="gmp6.jpg" class="img-fluid" alt="Foto 6">
+        </div>
+    </div>
+</div>
+
+        <!-- Button tentang kami -->
+            <a class="btn btn-danger btn-block" href="./tentang-kami.html">Tentang Kami</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="section-title">Menu Pilihan</h2>
+        <ul class="description">
+            <li>Paket Kambing Guling</li>
+            <li>Paket Olahan Daging Kambing</li>
+            <li>Paket Nasi Box</li>
+            <li>Jual Beli Kambing/Domba</li>
+        </ul>
+    </section>
+
+</main>
+
+
+
+<!-- Paket Layanan Kami -->
+<div class="container" id="paket-layanan-kami">
+  <h2>Paket Layanan Kami</h2>
+              
+
+    <div class="container mt-5">
+        <div class="row ">
+            <!-- Gambar 1 -->
+            <div class="col-md-3 mb-3">
+                <img src="sampul-naskot.jpg" alt="Sate Kambing Pak Jotho" class="img-fluid">
+                <h4 class="elementor-heading-title elementor-size-default">Paket Nasi Kotak</h4>
+                <p>Hadirkan kelezatan praktis untuk acara anda dengan nasi box kami yang lengkap dan menggugah selera! Setiap kotak diisi dengan hidangan lezat, porsi pas, dan kualitas terbaik yang cocok untuk berbagai acara. Dengan pilihan menu variatif dan harga terjangkau. Pesan sekarang, nikmati kemudahan dan kelezatan dalam setiap kotaknya!</p>
+                <!-- Button di bawah gambar 1 -->
+                <a href="./paket-nasi-kotak.html">
+                    <button class="btn btn-danger btn-block">Detail Paket</button>
+                </a>
+            </div>
+            <!-- Gambar 2 -->
+            <div class="col-md-3 mb-3">
+                <img src="sampul-kamgul.jpg" alt="Sate Kambing Pak Jotho" class="img-fluid">
+                <h4 class="elementor-heading-title elementor-size-default">Paket Kambing Guling</h4>
+                <p>Siapa bilang kambing guling lezat harus mahal? Kami hadirkan kambing guling dengan cita rasa yang istimewa dan harga yang ramah di kantong! Daging yang empuk, bumbu meresap sempurna, cocok untuk melengkapi acara Anda tanpa harus merogoh kocek dalam-dalam. Nikmati kelezatan premium dengan harga terjangkau! Yuk, pesan sekarang dan buat acara Anda lebih spesial!</p>
+                <!-- Button di bawah gambar 1 -->
+                <a href="./paket-kambing-guling.html">
+            	   <button class="btn btn-danger btn-block">Detail Paket</button>
+                </a>
+            </div>
+            <!-- Gambar 3 -->
+            <div class="col-md-3 mb-3">
+                <img src="sampul-olahan.jpg" alt="Sate Kambing Pak Jotho" class="img-fluid">
+                <h4 class="elementor-heading-title elementor-size-default">Paket Olahan Kambing</h4>
+                <p>Rasakan olahan daging kambing yang variatif dan tentunya menggugah selera dengan cita rasa istimewa dan harga terjangkau! Setiap hidangan kami dimasak dengan bumbu rempah pilihan yang meresap sempurna, menghasilkan daging yang empuk dan lezat di setiap gigitan. Cocok untuk santapan keluarga atau acara spesial Anda. Nikmati kelezatan daging kambing berkualitas, pesan sekarang dan manjakan selera Anda!</p>
+                <!-- Button di bawah gambar 1 -->
+                <a href="./paket-olahan-kambing.html">
+            	   <button class="btn btn-danger btn-block">Detail Paket</button>
+                </a>
+            </div>
+            <!-- Gambar 4 -->
+            <div class="col-md-3 mb-3">
+                <img src="Klathak.jpg" alt="Sate Kambing Pak Jotho" class="img-fluid">
+                <h4 class="elementor-heading-title elementor-size-default">Jual Beli Kambing/Domba</h4>
+                <p>Temukan kambing sehat dan berkualitas dengan harga yang terjangkau hanya di sini! Kami menyediakan kambing pilihan, segar, dan siap untuk berbagai keperluan, baik untuk keperluan konsumsi atau acara spesial Anda. Dengan harga yang ramah di kantong dan kualitas yang terjamin, Anda bisa mendapatkan kambing terbaik tanpa harus merogoh kocek dalam-dalam. Pesan sekarang dan dapatkan kambing terbaik dengan harga yang pas!</p>
+                <!-- Button di bawah gambar 1 -->
+                <a href="./ju.html">
+            	   <button class="btn btn-danger btn-block">Detail Paket</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+ <!-- Testimoni Section -->
+    <section id="testimoni">
+        <h2 class="section-title">Testimoni Pelanggan</h2>
+        <div class="testimonials">
+            <p><strong>H.Abdul Halim Muslih,Bupati Bantul:</strong> "Sate kambing Pak Jotho benar-benar enak! Dagingnya empuk dan bumbunya pas banget. Favorit saya adalah Sate Bumbu!"</p>
+            <p><strong>Gusti Yudha,Menantu Sri Sultan HB X:</strong> "Harga terjangkau dan rasanya luar biasa. Sate kambing Pak Jotho sudah jadi langganan keluarga kami."</p>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <h3>Hubungi Kami</h2>
+
+        <!-- Contact Person -->
+        <a href="mailto:gmpakjotho2208@gmail.com">
+            📧 Email: gmpakjotho2208@gmail.com
+        </a>
+        
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/gmpakjotho/" target="_blank">
+            📸 Instagram: @gmpakjotho
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6282122615122" target="_blank">
+            📱 WhatsApp: 0821-2261-5122
+        </a>
+    </div>
+
+<!-- Review -->
+    <section class="hero" style="margin-top: 20px;">
+        <h3>Berikan Review Anda untuk Griya Menda Pak Jotho!</h2>
+        <p>Bantu kami untuk terus meningkatkan kualitas layanan dan cita rasa olahan kambing kami.</p>
+    </section>
+
+    <section class="review-form" id="review">
+        <h5>Tulis Review Anda</h5>
+        <form action="#" method="POST">
+            <label for="name">Nama Anda:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">⭐</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">⭐⭐</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">⭐⭐⭐</label>
+            </div>
+        </form>
+    </section>
+
+<footer>
+    <p>&copy; 2024 Griya Menda Pak Jotho. Semua Hak Cipta Dilindungi.</p>
+</footer>
+
+
+
+<!-- Link ke Bootstrap JS dan jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
